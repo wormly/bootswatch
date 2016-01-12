@@ -149,14 +149,14 @@ a {
   > li > a,
   > li > a:focus {
     margin-right: 0;
-    background-color: transparent;
+    background-color: $tabbar-default-bg;
     border: none;
     color: $navbar-default-link-color;
-    @include box-shadow(inset 0 -1px 0 #ddd);
+    /*@include box-shadow(inset 0 -1px 0 #ddd);*/
     @include transition(all 0.2s);
 
     &:hover {
-      background-color: transparent;
+      background-color: darken($tabbar-default-bg, 6%);
       @include box-shadow(inset 0 -2px 0 $brand-primary);
       color: $brand-primary;
     }
@@ -307,7 +307,7 @@ a {
   }
 
   &-item-text {
-    color: $gray-light;
+    color: $list-group-item-text-color;
   }
 }
 
