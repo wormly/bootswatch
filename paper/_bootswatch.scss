@@ -170,7 +170,7 @@ input[type="radio"],
     position: absolute;
     left: 0;
     top: -3px;
-    background-color: $brand-primary;
+    background-color: $gray;
     @include scale(0);
   }
 
@@ -189,7 +189,7 @@ input[type="radio"],
   }
 
   &:checked:after {
-    border-color: $brand-primary;
+    border-color: $gray;
   }
 
   &:disabled:after,
@@ -213,7 +213,7 @@ input[type="checkbox"],
   }
 
   &:focus:after {
-    border-color: $brand-primary;
+    border-color: $gray;
   }
 
   &:after {
@@ -223,7 +223,7 @@ input[type="checkbox"],
     height: 18px;
     margin-top: -2px;
     margin-right: 5px;
-    border: 2px solid $gray;
+    border: 1px solid lighten($gray, 20%);
     border-radius: 2px;
     @include transition(240ms);
   }
@@ -243,8 +243,8 @@ input[type="checkbox"],
   }
 
   &:checked:after {
-    background-color: $brand-primary;
-    border-color: $brand-primary;
+    background-color: $gray;
+    border-color: $gray;
   }
 
   &:disabled:after {
