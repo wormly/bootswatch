@@ -163,7 +163,7 @@ input[type="radio"],
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    @include transition(240ms);
+    @include transition(140ms);
   }
 
   &:before {
@@ -225,7 +225,7 @@ input[type="checkbox"],
     margin-right: 5px;
     border: 1px solid lighten($gray, 20%);
     border-radius: 2px;
-    @include transition(240ms);
+    @include transition(140ms);
   }
 
   &:checked:before {
