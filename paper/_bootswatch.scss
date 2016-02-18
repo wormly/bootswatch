@@ -125,6 +125,37 @@ a {
 }
 
 // Forms ======================================================================
+select,
+select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAJ1BMVEVmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmaP/QSjAAAADHRSTlMAAgMJC0uWpKa6wMxMdjkoAAAANUlEQVR4AeXJyQEAERAAsNl7Hf3X6xt0QL6JpZWq30pdvdadme+0PMdzvHm8YThHcT1H7K0BtOMDniZhWOgAAAAASUVORK5CYII=);
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  font-size: 16px;
+  line-height: 1.5;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &.input {
+    &-sm {
+      font-size: $font-size-small;
+    }
+
+    &-lg {
+      font-size: $font-size-large;
+    }
+  }
+
+  &[multiple] {
+    background: none;
+  }
+}
+
 .radio,
 .radio-inline,
 .checkbox,
