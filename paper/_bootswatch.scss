@@ -287,42 +287,16 @@ input[type="checkbox"],
   }
 }
 
-.has-warning {
-  input:not([type=checkbox]),
-  .form-control,
-  input.form-control[readonly],
-  input[type=text][readonly],
-  [type=text].form-control[readonly],
-  input:not([type=checkbox]):focus,
-  .form-control:focus {
-    border-bottom: none;
-    @include box-shadow(inset 0 -2px 0 $brand-warning);
-  }
-}
-
 .has-error {
-  input:not([type=checkbox]),
+  input:not([type=checkbox]):input:not([type=radio]),
   .form-control,
   input.form-control[readonly],
   input[type=text][readonly],
   [type=text].form-control[readonly],
-  input:not([type=checkbox]):focus,
+  input:not([type=checkbox]):focus:input:not([type=radio]):focus,
   .form-control:focus {
     border-bottom: none;
     @include box-shadow(inset 0 -2px 0 $brand-danger);
-  }
-}
-
-.has-success {
-  input:not([type=checkbox]),
-  .form-control,
-  input.form-control[readonly],
-  input[type=text][readonly],
-  [type=text].form-control[readonly],
-  input:not([type=checkbox]):focus,
-  .form-control:focus {
-    border-bottom: none;
-    @include box-shadow(inset 0 -2px 0 $brand-success);
   }
 }
 
